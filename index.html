@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4ef6b1ecf7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+       
+        <div class="container">
+            <nav>
+                <span class="name1"><span id='s'>𝐒</span>𝐮𝐫𝐞𝐬𝐡𝐧𝐚𝐭𝐡.</span>
+                <ul  id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Sodha Sureshnath,</p>
+                <h1>Hi, I'm <span class="name">Frontend Developer<br></span>  From Bhachau.</h1>
+            </div>
+
+            
+        </div>
+
+    </div>
+    <!-- About section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/1st.jpg" alt="about img">
+                </div>
+                <div class="about-col-2" style="max-width:100%">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="text">As a fresh and enthusiastic talent in the realm of technology, I am Sodha Sureshnath an aspiring Frontend Developer and Software Developer eager to embark on an exciting journey in the world of software engineering.
+                         Hailing from Bhachau, I am currently venturing into the professional landscape after successfully completing my Bachelor of Science in Computer Science at Silver Oak University, Ahmedabad.<br>
+                         My passion for technology lies in creating visually appealing and user-friendly interfaces, which has naturally led me to specialize in Frontend Development.<span class="hideDisplay" id="seemore">Armed with a solid foundation in computer science,
+                         I am ready to leverage my skills to contribute to the ever-evolving field of software development.<br>
+                         Having honed my programming skills during my academic pursuits, I am well-versed in the latest tools and technologies that drive the software industry forward.
+                         With a commitment to continuous learning and a knack for problem-solving, I am poised to bring fresh perspectives and innovative solutions to the projects I undertake.
+                         As a budding professional, I am excited about the prospect of translating my theoretical knowledge into practical applications.<br> My goal is not only to stay abreast of the latest
+                         trends in technology but also to actively contribute to the development of cutting-edge software solutions that make a positive impact.
+                         With a keen eye for detail, a passion for clean and efficient code, and a commitment to delivering exceptional user experiences, I am ready to
+                         take on the challenges and opportunities that come with being a fresher in the dynamic field of frontend and software development. I am eager to collaborate, learn, and grow as a valuable member of any development team.</span>
+                    </p>
+                    <button class="read-more-btn" id="btn1" onClick="handleSeeMore('btn1','seemore')" >Read More</button>
+                    <div class="tab-titles" style="flex-wrap: wrap;">
+                       <button class="btn three tab-links active-link" onclick="opentab('skills')">Skills</button> 
+                        <button class="btn three tab-links active-link" onclick="opentab('experince')">Experince</button>
+                        <button class="btn three tab-links active-link" onclick="opentab('education')">Education</button>
+                    </div>
+                    <div class="main">
+                            <div class="tab-contents active-tab" id="skills">
+                                <ol class="space">
+                                   <li>Java</li>
+                                   <li>DATA STRUCTURE</li>
+                                   <li>SQL</li>
+                                   <li>C++</li>
+                                   <li>PYTHON</li>
+                                   <li>HTML</li>
+                                   <li>css</li>
+                                   <li>JAVASCRIPT</li>
+                                   <li>REACTJS</li>
+                                   <li>GIT</li>
+                                </ol>
+                            </div>
+                            <div class="tab-contents" id="experince">
+                                <ol>
+                                    <li><span><b>I am Fresher</span><br>Currently I am Final year Student.</b> </li>
+                                    
+                                </ol>
+                            </div>
+                            <div class="tab-contents google-map" id="education">
+                                <ol class="bar">
+                                    <li><span><b>2021 -  2024</b> </span> <br>Silver Oak University<br>Bachelor Of Science in Computer Science<br>CGPA :8.96/10<br>
+                                        <a href="https://maps.app.goo.gl/LDSaPHpC6N1DyWqd8" target="_blank" ><button id="loc" >Location</button></a></li>
+                                    <li><span><b>2021 -  XII</b></span><br>Model school - Bhachau <br> percentage : 77% <br>
+                                        <a href="https://maps.app.goo.gl/Y7CXZB5QviKqzPhn6" target="_blank" ><button id="loc" >Location</button></a></li>
+                                    <li><span><b>2019 -  X</b></span><br>Model school - Bhachau <br> percentage : 82% <br>
+                                        <a href="https://maps.app.goo.gl/Y7CXZB5QviKqzPhn6" target="_blank" ><button id="loc" >Location</button></a>
+                                      
+                                    </li>
+                                </ol>
+                             </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- about Section End -->
+<!-- Services Section Start -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Frontend Developer</h2>
+                <p class="text">Hello, I am A frontend developer, frontend developer is a creative and technically skilled professional responsible for bringing the visual elements of a website or application to life.
+                                Tasked with translating design concepts into interactive and user-friendly interfaces,i hava work with a combination of HTML, CSS, and JavaScript to build the client-side of web applications.
+                                 <span id="seemore1" class="hideDisplay"> I ensure that the user experience will seamless and engaging by implementing responsive designs, optimizing performance, and troubleshooting compatibility issues across various browsers and devices.
+                                 With a keen eye for design and an understanding of user behavior, I will play a crucial role in shaping the look and feel of digital platforms, making them accessible and appealing to users. As technology evolves, 
+                                I am stay abreast of the latest trends and tools to continually enhance the user interface and overall user experience.</span>
+                </p>
+                <button class="read-more-btn" id="btn2" onClick="handleSeeMore('btn2','seemore1')" >Read More</button>
+            </div>
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>Java Developer</h2>
+                <p class="text">As a Java developer, I am proficient in utilizing the Java programming language to create robust and scalable software solutions.
+                     My expertise lies in designing and implementing applications that run on the Java Virtual Machine (JVM), ensuring cross-platform compatibility. 
+                    <span id="seemore2" class="hideDisplay"> I am well-versed in Java's object-oriented principles, allowing me to develop modular and maintainable code. Additionally, my experience extends to 
+                     frameworks like Spring, which enables me to build enterprise-level applications with ease. As a Java developer, I am committed to writing efficient code,
+                      conducting thorough testing, and staying informed about the latest developments in the Java ecosystem. Whether working on backend systems, web applications, 
+                      or mobile applications, I leverage Java's versatility to deliver high-quality and reliable software solutions.</span>
+                </p>
+                <button class="read-more-btn" id="btn3" onClick="handleSeeMore('btn3','seemore2')" >Read More</button>
+            </div>
+            <div >
+                <i class="fa-sharp fa-solid fa-crop"></i>
+                <h2>Software Developer</h2>
+                <p class="text">As a fresher in the field of software development, I am enthusiastic and eager to contribute my skills and learn from hands-on experiences.
+                     Armed with a solid foundation in programming languages such as Java, Python, and C++, I am ready to embark on the exciting journey of transforming 
+                     code into innovative and functional software solutions.<span  id="seemore3" class="hideDisplay"> My academic background has equipped me with a strong understanding of software development
+                      principles, algorithms, and data structures. I am keen on adapting to industry best practices, collaborating with experienced professionals, and 
+                      continuously enhancing my knowledge. As a fresh software developer, I am ready to embrace challenges, absorb new technologies, and make meaningful
+                     contributions to the dynamic world of software development.</span>
+                </p>
+                <button class="read-more-btn" id="btn4" onClick="handleSeeMore('btn4','seemore3')" >Read More</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- services end -->
+<!-- portfolio start -->
+
+<div id="portfolio">
+    <div class="container">
+        <h2 class="sub-title">My Work</h2>
+        <div class="work-list">
+            <div class="work resto">
+                <img src="images/weather.png" alt="">
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>In this weather app, you can get the weather details of a particular city by entering the city 
+                        name or you can also get your current location weather details by clicking on the “Get Device Location” button. 
+                        If you entered an invalid city name then there is shown an error message.
+                         You’ll get many weather details in this app like temperature in celsius, 
+                         weather conditions, location, feels like, and humidity. If you’re feeling difficulty to understand what I’m saying then 
+                         you can watch a demo of this project (Weather App in JavaScript).</p>
+                       <a href="#><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work resto">
+                <img src="images/resto.png" class="img1" alt="">
+                <div class="layer">
+                    <h3>Restaurent Website</h3>
+                    <p>The restaurant website I developed is a delightful and user-friendly platform crafted with HTML, CSS, and some basic JavaScript to enhance interactivity.
+                         Basic JavaScript functionalities have been incorporated to enable features such as dynamic navigation and interactive elements.
+                         This includes a responsive design that adapts seamlessly to various devices, providing users with a consistent and enjoyable 
+                         browsing experience whether they access the site on a desktop, tablet, or smartphone. Overall, the restaurant website combines
+                         aesthetics and functionality to create an inviting online presence for patrons and potential customers.
+                    </p>
+                       <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <!-- <div class="work resto">
+                <img src="images/chat.png" alt="">
+                <div class="layer">
+                    <h3>Chat App</h3>
+                    <p>The chat application I developed using React.js offers a dynamic and seamless communication experience.
+                        Users can engage in real-time conversations and share images seamlessly, enhancing the overall 
+                        communication experience.With the ability to send images, the chat application goes beyond text-based communication,
+                        providing users with a more immersive and visually rich interaction. The integration of React ensures efficient data
+                        handling, making the application fast and responsive. The combination of React.js and image-sharing functionality 
+                        creates a modern and engaging chat platform that caters to the evolving needs of users in the digital communication landscape.</p>
+                       <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div> -->
+        </div>
+        <!-- <a href="" class="bnt">See more</a> -->
+    </div>
+</div>
+<!-- work end -->
+<!-- contact start -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>sodhasuresh323@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>+91 9773235384</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/suresh-sodha-39769524b"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Sure-12"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/suresh.sodha.739?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/sureshsodha25?igsh=MXA1ajdqMzFuaTZhNg=="><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <!-- <a href="/images/SureshSodha_Resume.pdf" download class="bnt bnt2">Download Resume</a> -->
+                <a href="/images/SureshSodha_Resume.pdf" download  class="btn-slide2">
+                    <span class="circle2"><i class="fa fa-download"></i></span>
+                    <span class="title2">Download</span>
+                    <span class="title-hover2">Click here</span>
+                  </a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="bnt bnt2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright@Suresh, Made with <i class="fa-solid fa-heart"></i> by Easy Coding</p>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
